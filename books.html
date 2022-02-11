@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book planet</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+        
+    <!-- header section starts  -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"> <i class="fas fa-book"></i> book planet </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="kitap bul..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">ana sayfa</a>
+                <a href="books.html">kitaplar</a>           <!--Buraya kitap listeleme gelecek-->
+                <a href="#featured">öne çıkanlar</a>
+                <a href="#arrivals">yeni gelenler</a>
+                <a href="#reviews">yorumlar</a>
+            </nav>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+    </nav>
+
+    <!-- login form  -->
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>üye girişi</h3>
+            <span>kullanıcı adı veya e-mail</span>
+            <input type="email" name="" class="box" placeholder="kullanıcı adı / email" id="">
+            <span>şifre</span>
+            <input type="password" name="" class="box" placeholder="şifre" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">beni hatırla</label>
+            </div>
+            <input type="submit" value="giriş" class="btn">
+            <p>şifremi unuttum! <a href="#">tıklayınız</a></p>
+            <p>yeni bir hesap için <a href="#">hesap oluştur</a></p>
+        </form>
+
+    </div>
+
+   <!-- home section starts  -->
+   <section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>Aradığınız kitaplar <br> burada!</h3>
+            <p>Dilediğin kitabı uygun fiyatlara kirala...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Alias exercitationem obcaecati sapiente explicabo repudiandae 
+                placeat! Odit vitae quasi at enim?</p>
+            <a href="#" class="btn">Kirala</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/img-1.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/img-2.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/img-3.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/img-4.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/img-5.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/img-6.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home section end  -->
+
+
+
+
+    <!-- footer section starts  -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>sayfalar</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> ana sayfa </a>
+                <a href="books.html"> <i class="fas fa-arrow-right"></i> koleksiyonumuz </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> öne çıkanlar </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> yeni gelenler </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> destekçilerimiz </a>
+            </div>
+
+            <div class="box">
+                <h3>üyelik</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> hesap bilgilerim </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> sepetim </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> kvkk </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> güvenli ödeme </a>
+            </div>
+
+            <div class="box">
+                <h3> İletişim </h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <img src="image/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit"> <a href="https://rukenerpolat.com/" target="_blank"> created by <span>Ruken Erpolat</span> | all rights reserved! </a></div>
+
+    </section>
+    <!-- footer section ends -->
+
+    <!-- loader  -->
+
+    <div class="loader-container">
+        <!-- <img src="image/Pendulum.gif" alt=""> -->
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
