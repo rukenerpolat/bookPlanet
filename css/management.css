@@ -21,8 +21,8 @@
     box-sizing: border-box;
     outline: none; 
     border:none;
-    text-decoration: none;
     text-transform: capitalize;
+    text-decoration: none;
     transition:all .2s linear;
     transition:width none;
 }
@@ -102,6 +102,7 @@ section{
 
 .header .header-1 .logo{
     font-family: 'Pacifico', cursive;
+    text-decoration: none;
     font-size: 2.5rem;
     font-weight: bolder;
     color:var(--main-color);
@@ -149,6 +150,7 @@ section{
     margin-left: 1.5rem;
     color:var(--main-color);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header .header-1 .icons div:hover,
@@ -158,32 +160,6 @@ section{
 
 #search-btn{
     display: none;
-}
-
-.header .header-2{
-    background:var(--main-color);
-}
-
-.header .header-2 .navbar{
-    text-align: center;
-}
-
-.header .header-2 .navbar a{
-    color:var(--first-color);
-    display: inline-block;
-    padding:1.2rem;
-    font-size: 1.7rem;
-}
-
-.header .header-2 .navbar a:hover{
-    background:var(--secondary-color);
-}
-
-.header .header-2.active{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-
 }
 
 .bottom-navbar{
@@ -327,7 +303,6 @@ section{
     font-size: 1.3rem;
 }
 
-
 /* ------------------------ */
 
 .footer .box-container{
@@ -347,6 +322,7 @@ section{
     font-size: 1.4rem;
     color:var(--light-color);
     padding:1rem 0;
+    text-decoration: none;
 }
 
 .footer .box-container .box a i{
@@ -381,11 +357,12 @@ section{
 
 .footer .share a:hover{
     background:var(--secondary-color);
+    text-decoration: none;
 }
 
 .footer .credit{
     border-top: var(--border);
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding:0 1rem;
     padding-top: 2.5rem;
     font-size: 1.3rem;
@@ -396,28 +373,6 @@ section{
 .footer .credit span{
     color:var(--main-color);
 }
-
-.loader-container{
-    position: fixed;
-    top:0; left: 0;
-    height:100%;
-    width: 100%;
-    z-index: 10000;
-    background:#f7f7f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loader-container.active{
-    display: none;
-}
-
-.loader-container img{
-    height:10rem;
-}
-
-
 
 /* media queries  */
 
@@ -451,10 +406,6 @@ section{
         padding-bottom: 6rem;
     }
 
-    .header .header-2{
-        display:none;
-    }
-
     .bottom-navbar{
         display: block;
     }
@@ -486,7 +437,6 @@ section{
     .home .row .content h3{
         font-size: 3.5rem;
     }
-
 
 }
 
