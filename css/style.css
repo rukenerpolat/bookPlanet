@@ -71,6 +71,7 @@ section{
     color:var(--secondary-color);
     background: var(--first-color);
     border:var(--border);
+    border-radius: 25px;
 }
 
 .btn{
@@ -159,28 +160,30 @@ section{
 
 .header .header-2{
     background:var(--main-color);
+    padding: 1.2rem;
 }
 
 .header .header-2 .navbar{
     text-align: center;
+    
 }
 
 .header .header-2 .navbar a{
     color:var(--first-color);
     display: inline-block;
-    padding:1.2rem;
+    padding:10px;
     font-size: 1.7rem;
 }
 
 .header .header-2 .navbar a:hover{
     background:var(--secondary-color);
+    border-radius: 30px;
 }
 
 .header .header-2.active{
     position:fixed;
     top:0; left:0; right:0;
     z-index: 1000;
-
 }
 
 .bottom-navbar{
@@ -375,6 +378,7 @@ section{
     overflow: hidden;
     border:var(--border);
     text-align: center;
+    border-radius: 30px;
 }
 
 .featured .featured-slider .box:hover{
@@ -428,20 +432,6 @@ section{
     color:var(--secondary-color);
 }
 
-.featured .featured-slider .box .content .price{
-    font-size: 2.2rem;
-    color:var(--secondary-color);
-    padding-top: 1rem;
-}
-
-.featured .featured-slider .box .content .price span{
-    font-size: 1.5rem;
-    color:var(--light-color);
-    text-decoration: line-through;
-}
-
-
-
 .swiper-button-next,
 .swiper-button-prev{
     border:var(--border-hover);
@@ -462,7 +452,7 @@ section{
     color:var(--secondary-color);
 }
 
-
+/*------------newsletter------------------- */
 
 .newsletter{   
     background:url(../image/letter-bg2.jpg) no-repeat;
@@ -473,10 +463,10 @@ section{
 }
 
 .newsletter form{
-    max-width: 45rem;
-    margin-left: auto;
+    max-width: 60rem;
     text-align: center;
     padding:5rem 0;
+    margin: auto;
 
     /*  glassmorphism  */
     background-color: rgba(255, 255, 255, 0.1);
@@ -488,7 +478,6 @@ section{
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgb(45,55,68,0.30);
     line-height: 1.5;
-
 }
 
 .newsletter form h3{
@@ -497,6 +486,10 @@ section{
     padding-bottom: .7rem;
     font-weight: normal;
 }
+.newsletter form p{
+font-size: 1.5rem;
+}
+
 
 .newsletter form .box{
     width: 100%;
@@ -507,7 +500,7 @@ section{
     border-radius: .5rem;
     text-transform: none;
 }
-
+/* -----------arrivals---------------- */
 .arrivals .arrivals-slider .box{
     display: flex;
     align-items:center;
@@ -515,6 +508,7 @@ section{
     padding:2rem 1rem;
     border:var(--border);
     margin:1rem 0;
+    border-radius: 30px;
 }
 
 .arrivals .arrivals-slider .box:hover{
@@ -584,7 +578,8 @@ section{
     font-size: 1.4rem;
     line-height: 2;
 }
-/* -----------contact------------ */
+
+/* -----------contact.html------------ */
 .contact{
     background:url(../image/banner-bg-2.jpg);    align-items: center;
     background-size: cover;
@@ -629,23 +624,16 @@ section{
     line-height: 2;
 }
 
-.contact .map{
-    flex:1 1 ;
-}
-
-.contact .map img{
-    width: 25rem;
-}
-.contact .map address{
+.contact address{
     color: var(--dark-color);
     font-size: 1.5rem;
 }
 
-
-/* ------------------------------ */
+/* ------------customer------------------ */
 
 .reviews .reviews-slider .box{
     border:var(--border);
+    border-radius: 30px;
     padding:2rem;
     text-align: center;
     margin:2rem 0;
@@ -743,36 +731,15 @@ section{
     padding:0 1rem;
     padding-top: 2.5rem;
     font-size: 1.3rem;
-    color:var(--light-color);
     text-align: center;
+}
+.footer .credit a{
+    color: var(--main-color);
 }
 
 .footer .credit span{
-    color:var(--main-color);
+    color:var(--secondary-color);
 }
-
-.loader-container{
-    position: fixed;
-    top:0; left: 0;
-    height:100%;
-    width: 100%;
-    z-index: 10000;
-    background:#f7f7f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loader-container.active{
-    display: none;
-}
-
-.loader-container img{
-    height:10rem;
-}
-
-
-
 
 /* media queries  */
 
