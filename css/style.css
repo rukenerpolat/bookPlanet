@@ -77,7 +77,7 @@ section{
 .btn{
     margin-top: 1rem;
     display:inline-block;
-    padding:.9rem 3rem;
+    padding:.7rem 3rem;
     border-radius: 30rem;
     color:var(--first-color);
     background:var(--main-color);
@@ -165,7 +165,6 @@ section{
 
 .header .header-2 .navbar{
     text-align: center;
-    
 }
 
 .header .header-2 .navbar a{
@@ -486,10 +485,10 @@ section{
     padding-bottom: .7rem;
     font-weight: normal;
 }
-.newsletter form p{
-font-size: 1.5rem;
-}
 
+.newsletter form p{
+    font-size: 1.5rem;
+}
 
 .newsletter form .box{
     width: 100%;
@@ -500,7 +499,9 @@ font-size: 1.5rem;
     border-radius: .5rem;
     text-transform: none;
 }
+
 /* -----------arrivals---------------- */
+
 .arrivals .arrivals-slider .box{
     display: flex;
     align-items:center;
@@ -578,6 +579,108 @@ font-size: 1.5rem;
     font-size: 1.4rem;
     line-height: 2;
 }
+
+/* -----------book-list // collection.html------- */
+
+.book-list{
+    display: flex;
+    justify-content: center;   
+}
+
+.card{
+    background-color: #d66b57;
+    border-radius: 30px;
+    width: 270px;
+    margin: 10px;
+}
+
+.card h2{
+    color:var(--main-color);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.card p{
+    color:var(--first-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card .btn-rent{
+    text-align: center;
+}
+
+.card-image{
+    background-color: #f3b852;
+    height: 35rem;
+    border-radius: 30px;
+    background-size: cover;
+    margin: 15px;
+}
+
+.book-1{
+    background-image: url(../image/img-1.jpg);
+}
+
+.book-2{
+    background-image: url(../image/img-2.jpg);
+}
+
+.book-3{
+    background-image: url(../image/img-3.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    flex-direction: column;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+ */
 
 /* -----------contact.html------------ */
 .contact{
