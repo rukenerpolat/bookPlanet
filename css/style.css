@@ -18,7 +18,8 @@
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none; 
+    border:none;
     text-decoration: none;
     text-transform: capitalize;
     transition:all .2s linear;
@@ -42,10 +43,11 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
     background:var(--secondary-color);
+    border-radius: 30px;
 }
 
 section{
-    padding:5rem 9%;
+    padding: 5rem 9%;
 }
 
 .heading{
@@ -583,104 +585,77 @@ section{
 /* -----------book-list // collection.html------- */
 
 .book-list{
-    display: flex;
-    justify-content: center;   
+    position: relative;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card{
-    background-color: #d66b57;
-    border-radius: 30px;
-    width: 270px;
-    margin: 10px;
-}
-
-.card h2{
-    color:var(--main-color);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
+ 
+.book-list .book-list-slider .box{
+    display: inline-block;
+    width: 20rem;
+    margin: 3rem;
+    position: relative;
+    overflow: hidden;
+    border:var(--border);
     text-align: center;
+    border-radius: 30px;
+    max-height: 40rem;
+    max-width: 30rem;
 }
 
-.card p{
+.book-list .book-list-slider .box:hover{
+    border:var(--border-hover);
+    box-shadow: 10px 10px 10px rgb(45,55,68,0.15);
+}
+
+.book-list .book-list-slider .box .image{
+    padding:1rem;
+    margin-top: 6rem;
+}
+
+.book-list .book-list-slider .box .image img{
+    height: 20rem;
+    box-shadow: 0px 0px 0px rgb(45,55,68,0.60);
+}
+
+.book-list .book-list-slider .box .icons{
+    position: absolute;
+    top:5px; left:0; right: 0;
+    font-size: 1rem;
+    background: var(--first-color);
+}
+
+.book-list .book-list-slider .box .icons a{
+    color:var(--secondary-color);
+    border: 0.5px solid var(--secondary-color);
+    margin: 5px;
+    border-radius: 50%;
+    padding:1.3rem 1.5rem;
+}
+
+.book-list .book-list-slider .box .icons a:hover{
+    background:var(--main-color);
     color:var(--first-color);
+}
+
+.book-list .book-list-slider .box .content{
+    padding:1rem;
+}
+
+.book-list .book-list-slider .box .content h3{
     font-size: 1.5rem;
+    color:var(--main-color);
+}
+.book-list .book-list-slider .box .content p{
+    font-size: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    height: 5rem;
     text-align: center;
+    color:var(--main-color);
 }
-.card .btn-rent{
-    text-align: center;
-}
-
-.card-image{
-    background-color: #f3b852;
-    height: 35rem;
-    border-radius: 30px;
-    background-size: cover;
-    margin: 15px;
-}
-
-.book-1{
-    background-image: url(../image/img-1.jpg);
-}
-
-.book-2{
-    background-image: url(../image/img-2.jpg);
-}
-
-.book-3{
-    background-image: url(../image/img-3.jpg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .flex-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: DodgerBlue;
-}
-  
-.flex-container > div {
-    background-color: #f1f1f1;
-    flex-direction: column;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}
-
- */
 
 /* -----------contact.html------------ */
 .contact{
@@ -921,6 +896,14 @@ section{
         max-width: 100%;
     }
 
+    .deal{
+        text-align: center;
+    }
+    
+    .collection{
+        text-align: center;
+    }
+
 }
 
 @media (max-width:450px){
@@ -928,5 +911,4 @@ section{
     html{
         font-size: 50%;
     }
-
 }
