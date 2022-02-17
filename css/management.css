@@ -67,14 +67,6 @@ section{
     z-index: -1;
 }
 
-.heading span{
-    font-size: 3rem;
-    padding:.5rem 2rem;
-    color:var(--secondary-color);
-    background: var(--first-color);
-    border:var(--border);
-}
-
 .btn{
     margin-top: 1rem;
     display:inline-block;
@@ -313,8 +305,11 @@ section{
 
 .footer .box-container .box h3{
     font-size: 2.2rem;
-    color:var(--secondary-color);
+    /* color:var(--secondary-color); */
     padding:1rem 0;
+    background: linear-gradient(52.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer .box-container .box a{
@@ -350,9 +345,11 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     color:#fff;
-    background:var(--main-color);
+    /* background:var(--main-color); */
     margin:0 .3rem;
     border-radius: 50%; 
+    background: linear-gradient(38.23deg, var(--main-color), var(--secondary-color) 79.95%);
+
 }
 
 .footer .share a:hover{

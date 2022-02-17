@@ -137,24 +137,16 @@ var swiper = new Swiper(".reviews-slider", {
   },
 });
 
-// var swiper = new Swiper(".blogs-slider", {
-//   spaceBetween: 10,
-//   grabCursor:true,
-//   loop:true,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 9500,
-//     disableOnInteraction: false,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
+// Modal Page _ collection.html
+
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show')
+});

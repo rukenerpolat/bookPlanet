@@ -69,9 +69,9 @@ section{
 
 .heading span{
     font-size: 3rem;
-    padding:.5rem 2rem;
-    color:var(--secondary-color);
-    background: var(--first-color);
+    padding:.4rem 2rem;
+    color:var(--first-color);
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
     border:var(--border);
     border-radius: 25px;
 }
@@ -89,7 +89,8 @@ section{
 }
 
 .btn:hover{
-    background:var(--secondary-color);
+    /* background:var(--secondary-color); */
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
 }
 
 .header .header-1{
@@ -104,8 +105,10 @@ section{
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     font-weight: bolder;
-    color:var(--main-color);
     letter-spacing: 2px;
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header .header-1 .logo i{
@@ -153,7 +156,9 @@ section{
 
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover{
-    color:var(--secondary-color);
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #search-btn{
@@ -161,8 +166,9 @@ section{
 }
 
 .header .header-2{
-    background:var(--main-color);
+    /* background:var(--main-color); */
     padding: 1.2rem;
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
 }
 
 .header .header-2 .navbar{
@@ -237,6 +243,9 @@ section{
     text-transform: uppercase;
     color:var(--secondary-color);
     text-align: center;
+    background: linear-gradient(94.23deg, var(--main-color) 12.41%, var(--secondary-color));
+    color: var(--first-color);
+    border-radius: 30px;
 }
 
 .login-form-container form span{
@@ -319,20 +328,19 @@ section{
 
 .home .row .books-slider a img{
     height: 25rem;
+    box-shadow: 5px 5px 5px rgb(45,55,68,0.40);
+    border-radius: 5px;
 }
 
 .home .row .books-slider a:hover img{
     transform: scale(.9);
 }
 
-.home .row .books-slider .stand{
-    width:100%;
-    margin-top: -2rem;
-}
-
 .home .row .content h3{
-    color:var(--secondary-color);
     font-size: 4.0rem;
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home .row .content p{
@@ -362,8 +370,10 @@ section{
 
 .icons-container .icons h3{
     font-size: 2.2rem;
-    color:var(--secondary-color);
     padding-bottom: .5rem;
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icons-container .icons p{
@@ -397,6 +407,8 @@ section{
 
 .featured .featured-slider .box .image img{
     height: 25rem;
+    box-shadow: 5px 5px 5px rgb(45,55,68,0.40);
+    border-radius: 5px;
 }
 
 .featured .featured-slider .box .icons{
@@ -436,6 +448,7 @@ section{
 .swiper-button-next,
 .swiper-button-prev{
     border:var(--border-hover);
+    border-radius: 50%;
     height:4rem;
     width:4rem;
     color:var(--secondary-color);
@@ -449,8 +462,8 @@ section{
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
-    background: var(--secondary-color);
-    color:var(--secondary-color);
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 98.95%);
+    color:var(--first-color);
 }
 
 /*------------newsletter------------------- */
@@ -520,29 +533,24 @@ section{
 
 .arrivals .arrivals-slider .box .image img{
     height:15rem;
+    box-shadow: 5px 5px 5px rgb(45,55,68,0.40);
+    border-radius: 5px;
 }
 
 .arrivals .arrivals-slider .box .content h3{
     font-size: 2rem;
-    color:var(--secondary-color);
-}
-
-.arrivals .arrivals-slider .box .content .price{
-    font-size: 2.2rem;
-    color:var(--secondary-color);
-    padding-bottom: .5rem;
-}
-
-.arrivals .arrivals-slider .box .content .price span{
-    font-size: 1.5rem;
-    color:var(--light-color);
-    text-decoration: line-through;
+    color:var(--main-color);
 }
 
 .arrivals .arrivals-slider .box .content .stars i{
     font-size: 1.5rem;
-    color:var(--main-color);
+    /* color:var(--main-color); */
+    background: linear-gradient(52.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+/* -----------lord of the rings / collection.html---------- */
 
 .deal{
     background:url(../image/banner-bg.jpg);
@@ -571,7 +579,10 @@ section{
 }
 
 .deal .content h1{
-    color:var(--secondary-color);
+    /* color:var(--secondary-color); */
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 4rem;
 }
 
@@ -585,18 +596,17 @@ section{
 /* -----------book-list // collection.html------- */
 
 .book-list{
-    position: relative;
+    /* position: relative; */
     display:inline-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
  
 .book-list .book-list-slider .box{
     display: inline-block;
     width: 20rem;
     margin: 3rem;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     border:var(--border);
     text-align: center;
@@ -612,32 +622,13 @@ section{
 
 .book-list .book-list-slider .box .image{
     padding:1rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 .book-list .book-list-slider .box .image img{
     height: 20rem;
-    box-shadow: 0px 0px 0px rgb(45,55,68,0.60);
-}
-
-.book-list .book-list-slider .box .icons{
-    position: absolute;
-    top:5px; left:0; right: 0;
-    font-size: 1rem;
-    background: var(--first-color);
-}
-
-.book-list .book-list-slider .box .icons a{
-    color:var(--secondary-color);
-    border: 0.5px solid var(--secondary-color);
-    margin: 5px;
-    border-radius: 50%;
-    padding:1.3rem 1.5rem;
-}
-
-.book-list .book-list-slider .box .icons a:hover{
-    background:var(--main-color);
-    color:var(--first-color);
+    box-shadow: 10px 10px 10px rgb(45,55,68,0.30);
+    border-radius: 5px;
 }
 
 .book-list .book-list-slider .box .content{
@@ -657,7 +648,60 @@ section{
     color:var(--main-color);
 }
 
+/* modal page */
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal{
+    height: 450px;
+    text-align: center;
+    background-attachment: fixed;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 120px;
+    color: #fff;
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    border: 2px solid transparent;
+    /* background-clip: padding-box; */
+    box-shadow: 10px 10px 10px rgb(45,55,68,0.30);
+}
+
+.modal h1{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+button{
+    display:inline-block;
+    padding:.3rem 2rem;
+    border-radius: 30rem;
+    color:var(--first-color);
+    background: linear-gradient(42.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
 /* -----------contact.html------------ */
+
 .contact{
     background:url(../image/banner-bg-2.jpg);    align-items: center;
     background-size: cover;
@@ -691,7 +735,10 @@ section{
 }
 
 .contact .content h1{
-    color:var(--secondary-color);
+    /* color:var(--secondary-color); */
+    background: linear-gradient(32.23deg, var(--main-color), var(--secondary-color) 48.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 4rem;
 }
 
@@ -747,7 +794,9 @@ section{
 
 .reviews .reviews-slider .box .stars i{
     font-size: 1.7rem;
-    color:var(--main-color);
+    background: linear-gradient(52.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer .box-container{
@@ -758,8 +807,11 @@ section{
 
 .footer .box-container .box h3{
     font-size: 2.2rem;
-    color:var(--secondary-color);
+    /* color:var(--secondary-color); */
     padding:1rem 0;
+    background: linear-gradient(52.23deg, var(--main-color), var(--secondary-color) 58.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer .box-container .box a{
@@ -794,13 +846,14 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     color:#fff;
-    background:var(--main-color);
+    /* background:var(--main-color); */
     margin:0 .3rem;
     border-radius: 50%; 
+    background: linear-gradient(38.23deg, var(--main-color), var(--secondary-color) 79.95%);
 }
 
 .footer .share a:hover{
-    background:var(--secondary-color);
+    background:var(--main-color);
 }
 
 .footer .credit{
