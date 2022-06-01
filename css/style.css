@@ -5,8 +5,6 @@
     --main-color:#254a56;
     --secondary-color: #4da99c;
     --first-color: #fff;
-    --third-color: #f3b852; 
-    --fourth-color: #d66b57;
     --dark-color:#444;
     --light-color:#666;
     --border:.1rem solid rgba(0,0,0,.1);
@@ -16,7 +14,8 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     box-sizing: border-box;
     outline: none; 
     border:none;
@@ -754,9 +753,9 @@ button{
     font-size: 1.5rem;
 }
 
-/* ------------customer------------------ */
+/* ------------customer start------------------ */
 
-.reviews .reviews-slider .box{
+/* .reviews .reviews-slider .box{
     border:var(--border);
     border-radius: 30px;
     padding:2rem;
@@ -797,7 +796,12 @@ button{
     background: linear-gradient(52.23deg, var(--main-color), var(--secondary-color) 58.95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
+
+/* ----------------customer end-------------------- */
+
+
+/* ---------Footer start ------------*/
 
 .footer .box-container{
     display: grid;
